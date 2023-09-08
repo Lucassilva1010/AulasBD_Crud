@@ -122,7 +122,6 @@
             btnBuscaTodosMySql.TabIndex = 10;
             btnBuscaTodosMySql.Text = "Buscar Todos";
             btnBuscaTodosMySql.UseVisualStyleBackColor = true;
-            btnBuscaTodosMySql.Click += btnBuscaTodosMySql_Click;
             // 
             // btnDeletarMySql
             // 

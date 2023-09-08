@@ -33,23 +33,19 @@ namespace AulaDiogo
         }
         void ListarTudoMySql()
         {
+           
+                MySqlConnection conn = new MySqlConnection();
+                conn.ConnectionString = "Server=localhost;Database=aulas;Uid=root;Pwd=root;";
 
-            MySqlConnection conn = new MySqlConnection();
-            conn.ConnectionString = "Server=localhost;Database=aulas;Uid=root;Pwd=root;";
+                MySqlDataAdapter da = new MySqlDataAdapter("Select * From Produtoss", conn);
+                DataSet dataSet = new DataSet();
+                da.Fill(dataSet);
 
-            MySqlDataAdapter da = new MySqlDataAdapter("Select * From Produtoss", conn);
-            DataSet dataSet = new DataSet();
-            da.Fill(dataSet);
-
-            dataGridView1.DataSource = dataSet;
-            dataGridView1.DataSource = dataSet.Tables[0];
+                //dataGridView1.DataSource = dataSet;
+                dataGridView1.DataSource = dataSet.Tables[0];
+            
         }
         private void btnBuscaTodosSql_Click(object sender, EventArgs e)
-        {
-            ListarTudoSql();
-        }
-
-        private void btnBuscaTodosMySql_Click(object sender, EventArgs e)
         {
             ListarTudoMySql();
         }
