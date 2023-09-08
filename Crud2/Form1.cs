@@ -101,6 +101,6 @@ namespace Crud2
             ListarTodosSql();
         }
 
-        
+
     }
 }

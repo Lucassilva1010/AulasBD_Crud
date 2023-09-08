@@ -58,9 +58,10 @@
             // labelCor
             // 
             labelCor.AutoSize = true;
-            labelCor.Location = new Point(795, 49);
+            labelCor.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCor.Location = new Point(795, 41);
             labelCor.Name = "labelCor";
-            labelCor.Size = new Size(32, 20);
+            labelCor.Size = new Size(44, 28);
             labelCor.TabIndex = 37;
             labelCor.Text = "Cor";
             // 
@@ -74,9 +75,10 @@
             // labelNome
             // 
             labelNome.AutoSize = true;
-            labelNome.Location = new Point(602, 49);
+            labelNome.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelNome.Location = new Point(602, 41);
             labelNome.Name = "labelNome";
-            labelNome.Size = new Size(50, 20);
+            labelNome.Size = new Size(69, 28);
             labelNome.TabIndex = 35;
             labelNome.Text = "Nome";
             // 
@@ -90,9 +92,10 @@
             // labelId
             // 
             labelId.AutoSize = true;
-            labelId.Location = new Point(393, 49);
+            labelId.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelId.Location = new Point(393, 41);
             labelId.Name = "labelId";
-            labelId.Size = new Size(24, 20);
+            labelId.Size = new Size(33, 28);
             labelId.TabIndex = 33;
             labelId.Text = "ID";
             // 
@@ -269,16 +272,15 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ActiveCaptionText;
+            label2.BackColor = SystemColors.Highlight;
             label2.BorderStyle = BorderStyle.FixedSingle;
             label2.Font = new Font("Maiandra GD", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(12, 276);
             label2.Name = "label2";
-            label2.Size = new Size(244, 29);
+            label2.Size = new Size(214, 29);
             label2.TabIndex = 42;
-            label2.Text = "Usando o SQL Server";
-            
+            label2.Text = "Usando o MySQL ";
             // 
             // Form1
             // 
